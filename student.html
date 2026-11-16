@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مساحة الطالبة | CodeRank</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #081326;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 22px 7%;
+  border-bottom: 1px solid #263b59;
+  display: flex;
+  justify-content: space-between;
+}
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #63dce8; }
+a { color: #63dce8; text-decoration: none; }
+main { max-width: 850px; margin: 50px auto; padding: 20px; }
+.card {
+  background: #12233d;
+  border: 1px solid #29415f;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+h1 { color: #63dce8; }
+p { color: #b6c5da; line-height: 1.9; }
+textarea {
+  width: 100%;
+  min-height: 250px;
+  background: #07101f;
+  color: #8ce8ef;
+  border: 1px solid #38506e;
+  border-radius: 10px;
+  padding: 15px;
+  direction: ltr;
+  text-align: left;
+  font-family: monospace;
+  font-size: 14px;
+}
+button {
+  background: #63dce8;
+  color: #081326;
+  border: 0;
+  padding: 13px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.notice { color: #f2cf83; font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Code<span>Rank</span></div>
+  <a href="index.html">الرئيسية ←</a>
+</header>
+
+<main>
+  <section class="card">
+    <h1>مساحة الطالبة</h1>
+    <p>أهلًا بك! استعدّي للتحدي البرمجي.</p>
+    <h2>التحدي الحالي: مجموع عددين</h2>
+    <p>اكتبي برنامجًا يقرأ عددين صحيحين ثم يطبع مجموعهما.</p>
+    <p>لغة البرمجة: C++</p>
+  </section>
+
+  <section class="card">
+    <h2>محرر الأكواد</h2>
+    <textarea id="code">#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b;
+    return 0;
+}</textarea>
+    <button onclick="alert('هذا إرسال تجريبي فقط، لم يتم تقييم الكود بعد.')">
+      إرسال الحل
+    </button>
+    <p class="notice">نسخة أولية: تشغيل C++ والتحقق من الحل سيُضافان لاحقًا.</p>
+  </section>
+</main>
+</body>
+</html>
